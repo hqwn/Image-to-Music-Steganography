@@ -26,7 +26,8 @@ with music_to_image:
     audio_file = st.file_uploader('Upload your super secret .mid file', type='.mid')
 
     if audio_file:
-        st.image(main.decode_midi_file(audio_file))
+        with st.spinner('coberting your audio back into an image'):
+            st.image(main.decode_midi_file(audio_file))
 
 with info:
     st.markdown("""
