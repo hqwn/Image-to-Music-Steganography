@@ -20,13 +20,13 @@ with image_to_music:
             audio = main.image_to_music(image_file)
             st.download_button('Download your .mid file', data=audio, file_name='secret_image.mid', mime='audio/midi')
 
-#music to mimage tab utilizing the function made in the main.py file
+#music to image tab utilizing the function made in the main.py file
 with music_to_image:
 
     audio_file = st.file_uploader('Upload your super secret .mid file', type='.mid')
 
     if audio_file:
-        with st.spinner('coberting your audio back into an image'):
+        with st.spinner('Converting your audio back into an image'):
             st.image(main.decode_midi_file(audio_file))
 
 with info:
