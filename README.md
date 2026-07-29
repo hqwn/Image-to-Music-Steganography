@@ -7,7 +7,7 @@ spyware, hence this.
 The primary base of the website is that it can convert an image into music, and reverse it.
 This is a type of steganography which can be used to hide info. 
 
-You can check out the website [here]([https://aryan-2003.github.io/Custom-Image-to-Music-Converter/](https://image-to-music-steganography.streamlit.app/))
+You can check out the website [here](https://image-to-music-steganography.streamlit.app/)
 
 ---
 
