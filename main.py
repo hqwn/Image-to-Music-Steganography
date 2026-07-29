@@ -15,7 +15,7 @@ def format_image(image_path):
 
     return final_modified_image
 
-#Turns that image data into a mid file by turning the pixel value divided by 2 into the note and the reaminder into the velocity + 50 (+ 50 is there to make sure you can hear it)
+#Turns that image data into a mid file by turning the pixel value divided by 2 into the note and the remainder into the velocity + 50 (+ 50 is there to make sure you can hear it)
 def turn_to_music(image_data):
     midi = MidiFile()
     track = MidiTrack()
@@ -54,7 +54,7 @@ def turn_to_music(image_data):
 def decode_midi_file(mid_file):
     reconstructed_image_data = []
     midi = MidiFile(file=mid_file)
-    for track in midi.tracks:
+    for track in miditracks:
         for msg in track:
             if msg.type == 'note_on':
                 reconstructed_image_data.append((msg.note *2) + (msg.velocity - 50))
