@@ -54,7 +54,7 @@ def turn_to_music(image_data):
 def decode_midi_file(mid_file):
     reconstructed_image_data = []
     midi = MidiFile(file=mid_file)
-    for track in miditracks:
+    for track in midi.tracks:
         for msg in track:
             if msg.type == 'note_on':
                 reconstructed_image_data.append((msg.note *2) + (msg.velocity - 50))
