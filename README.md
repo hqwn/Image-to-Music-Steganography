@@ -1,4 +1,6 @@
-# Custom Image to Music Steganography
+# Custom Image-to-Music Steganography
+
+<img width="959" height="533" alt="Screenshot 2026-11-07 201814" src="https://github.com/user-attachments/assets/8f1d378e-dcc0-489e-86d6-fbf25d9689b4" />
 
 Hi! My name is Aryan; I'm 14 years old, and I made this project for fun and [this](https://ispy.hackclub.com/)
 program where the primary goal is to make a project and have fun. The theme of this project is some sort of 
@@ -7,11 +9,12 @@ spyware, hence this.
 The primary base of the website is that it can convert an image into music, and reverse it.
 This is a type of steganography which can be used to hide info. 
 
-You can check out the website [here](https://image-to-music-steganography.streamlit.app/)
+You can check out the website [here](https://image-to-music.streamlit.app/)
 
 ---
 
 # How it works :)
+
 
 If you are curious about how this works, here's how:
 
